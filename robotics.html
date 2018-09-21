@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120139475-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-120139475-1');
+		</script>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Eklavya Portfolio</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom fonts for this template -->
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+		<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/resume.min.css" rel="stylesheet">
+
+	</head>
+
+	<body id="page-top">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">
+				<span class="d-block d-lg-none">Start Bootstrap</span>
+				<span class="d-none d-lg-block">
+					<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+				</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#task">Task</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#implementation">Implementation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#occupancy">Occupancy Grid Display</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#astarsearch">A* Search Algorithm</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid p-0">
+
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+				<div class="my-auto">
+					<h2 class="mb-5">Robotics</h2>
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<h3 class="mb-0">2017-18</h3>
+							<div class="subheading mb-3" id="">Task</div>
+							<p>One was required to write a robot program that enables a robot to explore the arena and produce a map. The arena had a small number of obstacles, placed at random locations. There was a single coloured sheet of paper which the robots had to be able to detect using the colour sensor which also signifed the end location. When finished generating the map, the robot had navigate back to the ending position.</p>
+							<div class="subheading mb-3" id="implementation">Implementation</div>
+							<p>I mostly focused on the A* search task, and also provided the foundation for the LCD Occupancy Grid Display.</p>
+							<div class="subheading mb-3" id="occupancy">Occupancy Grid Display</div>
+							<p>I looked into the different <code>LCD</code> classes, and played around with <code>TextLCD</code> and <code>GraphicsLCD</code> to understand their differences, and to see when and how they could ‘overlap’ together. Interesting results revealed how one class only allowed to clear entire screen, where as the other allowed the user to clear a specific section by inputting coordinates.</p>
+							<p>I made the initial grid of rectangles, using the entire screen, by getting the <code>width</code> and <code>height</code> via the <code>getWidth()</code> and <code>getHeight()</code> methods, and diving them by the constant number of grids horizontally and vertically.</p>
+							<p>Made the foundational for-loops and if-statements to initialise the grid, and display a sample occupancy grid values such as <code>0</code> for empty, <code>1</code> for obstacle and <code>2</code> for final target position. Then added offset to the coordinates so the values would appear in the middle of each rectangle, rather than starting at the top left corner.</p>
+							<p>Finally, I started experimenting with trying to update the display values in real-time as the robot moved along, and explained to Adam several potential ways to do so before passing on the task and my code entirely to him.</p>
+							<div class="subheading mb-3" id="astarsearch">A* Search Algorithm</div>
+							<p>I fully implemented the entire <code>A*</code> search for the pathfinding by making two classes:</p>
+							<p>The first, <code>AStarNode</code>, contains the information on the nodes used in the search, such as it’s <code>X</code> and <code>Y</code> coordinates position, it’s parent node, whether it’s an obstacle or not, and methods to calculate the manhattan distance from the current to target position.</p>
+							<p>The second, <code>AStarSearch</code>, which extends the <code>AStarNode</code> class, has the actual A* algorithm inside a while-loop, and several functions for detecting obstacles, building the best path List, initialising the nodes, searching the occupancy grid matrix for the target position, etc.</p>
+							<p>The main idea of the search is to divide the nodes into an <b>open</b> and <b>closed</b> list, for which a <code>PriorityQueue</code> and <code>Hash</code> were used instead of standard <code>ArrayLists</code>, as they reduced the time complexity required to re-arrange or check the list by at least a magnitude.</p>
+							<p>The code was based on available generic A* pseudocode, and the main challenge was conceptualising the conversion from integer values in a 2D <code>array</code> to nodes, and then converting them back in a <code>[i,j]</code> format to be inserted in a returned list.</p>
+							<div class="subheading mb-3" id="gallery">Gallery</div>
+							<div class="embed-responsive embed-responsive-16by9">
+							  <iframe width="460" height="315" src="https://www.youtube.com/embed/6gEVFoj_GIc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<br>
+							<button type="button" class="btn btn-warning"><a style="color:black" href="index.html#projects">Back</a></button>
+              				<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="#">PDF</a></button>
+							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/Robotics1">Code</a></button>
+						</div>
+			            <div class="resume-date text-md-right">
+			              <span class="text-primary"><a href="https://github.com/EklavyaFCB/Robotics1" Source code>Source Code</a></span><br>
+			              <img src="img/github.jpg" width="50" height="50">
+			            </div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+		<!-- Custom scripts for this template -->
+		<script src="js/resume.min.js"></script>
+
+	</body>
+
+</html>
