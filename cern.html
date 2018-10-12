@@ -62,10 +62,7 @@
 						<a class="nav-link js-scroll-trigger" href="#implementation">Implementation</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#outcomes">Outcomes</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#implementation">Gallery</a>
+						<a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
 					</li>
 				</ul>
 			</div>
@@ -79,14 +76,28 @@
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
 							<h3 class="mb-0">Summer 2017</h3>
-							<div class="subheading mb-3">Description</div>
+							<div class="subheading mb-3" id="description">Description</div>
+							<p>I worked at CERN for three months, at the CMS Experiment lab, working specifically on the 'CMS-GEM' collaboration, which involved changing particle detector’s technology to Gas Electron Multiplier (GEMs).</p>
+							<p>My role was being involved in the final quality control to check if the detector’s hardware was functioning appropriately, by having python code run through its triggers, and then improving the software used for these tests by adding new functionalities to the codebase, and changing basic configurations of the detectors, which would allow them behave in different ways under different electrical conditions.</p>
+							<div class="subheading mb-3" id="goals">Goals</div>
 							<p></p>
-							<div class="subheading mb-3">Goals</div>
-							<p></p>
-							<div class="subheading mb-3">Challenges</div>
-							<div class="subheading mb-3">Implementation</div>
-							<div class="subheading mb-3">Outcomes</div>
-							<div class="subheading mb-3">Gallery</div>
+							<div class="subheading mb-3" id="challenges">Challenges</div>
+							<div class="subheading mb-3" id="implementation">Implementation</div>
+							<p><b>Software development:</b></p>
+							<p>Implemented requested features on an existing central code repository, relating to GEM detector’s hardware, using Python scripts, and tested them on a Cosmic Stand (Quality Control Stand 8) while maintaining detailed e-logs of results.</p>
+							<ul>
+								<li>Improved code used for testing detector in a quality control stand by adding an optional step-size argument feature.</li>
+								<li>Created method for configuring detector’s electrical state with custom values by employing a Python dictionary.</li>
+								<li>Published real-time gas levels of a mixer by writing C++ script on Visual Studio to collect and send data to a shared server via an API, by employing Cern's <code>DIP</code> Server documentation. The published data corresponded to the the latest gas levels of a gas mixer using a <code>.txt</code> file generated from <code>FlowPlot</code>, <code>FlowView</code> and <code>FlowDEE2</code> softwares.</li>
+							</ul>
+							<p><b>Data analysis:</b></p>
+							<ul>
+								<li>Installed and learnt Cern’s <code>ROOT</code> C++/Python CLI framework to understand tree and n-tuple data structures, and used them to plot, fit and cut particles physics events such as collisions and trajectories on histograms.</li>
+								<li>Analysed data returned from running <code>latency scans</code> to verify if implemented features were returning expected values.</li>
+							</ul>
+							<p><b>R&D:</b></p>
+							<p>Used a <code>LabVIEW</code> interface connected to a pico-ammeter and radiation stand to get and plot various data relating to irradiated GEM detector foils of various thicknesses in order to observe and understand relationship between X-Ray energies, electrical current, foil properties and the subsequently varying amount of particles detected.</p>
+							<div class="subheading mb-3" id="gallery">Gallery</div>
 							<img src="img/Cern1.png" class="rounded" width="250" height="350">
 							<img src="img/Cern3.png" class="rounded" width="250" height="350">
 							<img src="img/Cern4.png" class="rounded" width="250" height="350">
