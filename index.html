@@ -60,7 +60,13 @@
 						<a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#thesis">Thesis</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#competitions">Competitions</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -82,7 +88,6 @@
 		</nav>
 
 		<div class="container-fluid p-0">
-
 			<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
 				<div class="my-auto">
 					<h1 class="mb-0">Eklavya
@@ -91,9 +96,10 @@
 					<div class="subheading mb-5"> Bath, United Kingdom
 						<a href="mailto:es2030@bath.ac.uk">es2030@bath.ac.uk</a>
 					</div>
-					<p>Recently graduate Computer Science student, currently studying MSc Data Science, <br> interested in solving problems relating to Computer Vision through Machine Learning.</p>
-					<p>Experienced in software engineering, front to back end programming, systems design, and algorithmic optimisation.</p>
-					<p><b>Currently looking for a new graduate role starting Sept 2019 onwards.</b><br>Visa sponsorship would be required for US firms, none for UK or CH ones.</p>
+					<p>MSc Data Science <br> BSc Computer Science<p>
+					<p>Interested in solving real world problems relating to Computer Vision through AI/ML/DL.</p>
+					<p>Experienced in predictive AI modelling, software engineering, full-stack programming, systems design, and algorithmic optimisation.</p>
+					<p><b>Currently looking for a new graduate role starting Sept 2019 onwards.</b></p>
 					<br>
 					<ul class="list-inline list-social-icons mb-0">
 						<!--<li class="list-inline-item">
@@ -113,31 +119,17 @@
 							</a>
 						</li>-->
 						<li class="list-inline-item">
-							<a href="https://www.linkedin.com/in/eklavyasarkar">
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
+							<button type="button" class="btn btn-warning btn-xs"><a target="_blank" style="color:white" href="https://www.linkedin.com/in/eklavyasarkar">LinkedIn</a></button>
 						</li>
 						<li class="list-inline-item">
-							<a href="https://github.com/EklavyaFCB">
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
+							<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB">Github</a></button>
 						</li>
-						<!--<li class="list-inline-item">
-							<a href="https://www.kaggle.com/eklavyas">
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<img src="img/kaggle.png" width="25" height="25" alt="kaggle">
-								</span>
-							</a>
-						</li>-->
 						<li class="list-inline-item">
-							<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/CV.pdf">Résumé</a></button>
+							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://www.kaggle.com/eklavyas">Kaggle</a></button>
+
+						</li>
+						<li class="list-inline-item">
+							<button type="button" class="btn btn-info btn-xs"><a target="_blank" style="color:white" href="docs/CV.pdf">Résumé</a></button>
 						</li>
 					</ul>
 				</div>
@@ -149,8 +141,9 @@
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Intern</h3>
-							<div class="subheading mb-3">CERN, CMS Experiment</div>
+							<span class="badge badge badge-light">SE</span><span class="badge badge badge-light">DS</span></span><span class="badge badge badge-light">R&D</span>
+							<h3 class="mb-0">CERN</h3>
+							<div class="subheading mb-3">Intern, CMS Experiment</div>
 							<p>I worked at CERN for three months, at the CMS Experiment lab, working specifically on the 'CMS-GEM' collaboration, which involved changing particle detector’s technology to Gas Electron Multiplier (GEMs).</p>
 							<p>My role was being involved in the final quality control to check if the detector’s hardware was functioning appropriately, by having python code run through its triggers, and then improving the software used for these tests by adding new functionalities to the codebase, and changing basic configurations of the detectors, which would allow them behave in different ways under different electrical conditions.</p>
 							<button type="button" class="btn btn-warning"><a style="color:black" href="cern.html">More</a></button>
@@ -160,10 +153,68 @@
 							<br>
 							<span class="text-primary">(3 months)</span>
 							<br><br>
+							<img src="img/cernlogo.png" class="img-thumbnail" width="100" height="100"><br><br>
 							<img src="img/Cern1.png" class="img-thumbnail" width="200" height="250">
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="thesis">
+				<div class="my-auto">
+					<h2 class="mb-5">Thesis</h2>
+
+						<div class="resume-item d-flex flex-column flex-md-row mb-5">
+							<div class="resume-content mr-auto">
+								<span class="badge badge badge-light">DL</span><span class="badge badge badge-light">ML</span>
+								<h3 class="mb-0">Facial Detection & Recognition</h3>
+								<div class="subheading mb-3">MSc, Computer Vision, Convolutional Neural Networks</div>
+								<p>This project attempts to use state-of-the-art deep learning techniques to build an end-to-end model which takes an image as input, and performs facial detection, recognition, and emotion classification on the present individuals. Each of these sub-tasks is based on a model trained on a <i>personal</i> dataset, in order to showcase the power of deep learning techniques. The idea is to demonstrate how modern techniques in computer vision have advanced enough to now make photographs 'readable'.
+								<p><i>Project in progress, more coming soon ...</i></p>
+								<!--<button type="button" class="btn btn-warning"><a style="color:black" href="#">More</a></button>
+								<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="#">PDF</a></button>
+								<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="#">Code</a></button>-->
+							</div>
+							<div class="resume-date text-md-right">
+								<span class="text-primary">2019</span>
+								<br><br>
+								<img src="img/FaceReco.png" class="img-thumbnail" width="200" height="250">
+							</div>
+						</div>
+						
+						<div class="resume-item d-flex flex-column flex-md-row mb-5">
+							<div class="resume-content mr-auto">
+								<span class="badge badge badge-light">SE</span><span class="badge badge badge-light">ML</span><span class="badge badge badge-light">200 Pages</span>
+								<h3 class="mb-0">Kohonen Self-Organising Maps</h3>
+								<div class="subheading mb-3">BSc, Computer Vision, Pattern Recognition</div>
+								<p>This project contains the implementation of a Kohonen Network as an application from scratch without any ML library, in order to demonstrate its usefulness and explain in depth the concepts of Machine Learning, by means of a converging Self-Organising Map. It provides an in-depth study of Kohonen’s algorithm, and present insights of its properties, by designing and implementing three functional model on different datasets.</p>
+								<button type="button" class="btn btn-warning"><a style="color:black" href="som.html">More</a></button>
+								<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/KohonenThesis.pdf">PDF</a></button>
+								<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/EMNIST-Kohonen-SOM">Code</a></button>
+							</div>
+							<div class="resume-date text-md-right">
+								<span class="text-primary">2017-18</span>
+								<br><br>
+								<img src="img/som1.png" class="img-thumbnail" width="200" height="250">
+							</div>
+						</div>
+
+						<div class="resume-item d-flex flex-column flex-md-row mb-5">
+							<div class="resume-content mr-auto">
+								<span class="badge badge badge-light">DS</span><span class="badge badge badge-light">50 Pages</span>
+								<h3 class="mb-0">Exoplanets: Discoveries and Prospects</h3>
+								<div class="subheading mb-3">High School, Data Analysis, Literature Review</div>
+								<p>This project contains a thorough literature review of the current state of the art of in the field of exoplanets, as well as in-depth analysis of the scientific and creative aspects of searching for exoplanets, particularly those which hold promise of supporting life as we understand it.</p>
+								<button type="button" class="btn btn-warning"><a style="color:black" href="exoplanets.html">More</a></button>
+								<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/exoplanets.pdf">PDF</a></button>
+								<button type="button" class="btn btn-info btn-xs"><a target="_blank" style="color:white" href="docs/ExoplanetsPres.pdf">Presentation</a></button>
+							</div>
+							<div class="resume-date text-md-right">
+								<span class="text-primary">2012-13</span>
+								<br><br>
+								<img src="img/exoplanets.png" class="img-thumbnail" width="200" height="250">
+							</div>
+						</div>
 
 			</section>
 
@@ -173,42 +224,41 @@
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Data Science: Machine Learning Algorithms</h3>
+							<span class="badge badge badge-light">RL</span><span class="badge badge badge-light">DL</span><span class="badge badge badge-light">DQN</span><span class="badge badge badge-light">DDPG</span>
+							<h3 class="mb-0">Deep Reinforcement Learning: Flappy Bird</h3>
+							<div class="subheading mb-3">Deep Q-Learning Network, Deep Deterministic Policy Gradient, Experience Replay</div>
+							<p>We attempt to a develop model which is able to learn to play Flappy Bird, and surpass human level scores by using Reinforcement Learning techniques. Specifically, we investigate Deep Q-Learning networks to develop an overview of the problem and deeper understanding on reinforcement learning techniques. We wished to showcase how computer vision and deep neural networks such as convolutional neural networks can be used in the context of reinforcement learning as well.</p>
+							<button type="button" class="btn btn-warning"><a style="color:black" href="">More</a></button>
+							<button type="button" class="btn btn-success"><a style="color:white" href="docs/FlappyBird.pdf">PDF</a></button>
+							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/FlappyBirdDQN">Code</a></button>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">2018</span>
+							<br><br>
+							<img src="img/FlappyBird.png" class="img-thumbnail" width="150" height="150">
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<span class="badge badge badge-light">DS</span><span class="badge badge badge-light">ML</span><span class="badge badge badge-light">DL</span>
+							<h3 class="mb-0">Classical Machine Learning Algorithms</h3>
 							<div class="subheading mb-3">Machine Learning, Deep Learning, Neural Networks</div>
-							<p> I haven't updated my page with my current degree's projects in Data Science. But essentially we have gone through most of the classical ML techniques, such as Gaussian Processes, Regression Forests, Decision Trees, K-Nearest Neighbours, Naive-Bayes, using a stats approach. And currently we are going through the deep learning methods, such as Multi-Layered Perceptron, Convolutional Neural Networks, Backpropagation, etc.
-							<br>
-							We've also had projects in 'applied data science' modules where we have to choose an algorithm of our choosing and make a suitable module given a particular dataset. 
-							</p>
+							<p>Projects involving most of the classical ML techniques, such as Regression Forests, Decision Trees, K-Nearest Neighbours, Naive-Bayes, Gaussian Processes. And currently we are going through the deep learning methods, such as Multi-Layered Perceptron, Convolutional Neural Networks, Backpropagation, etc.</p>
 						</div>
 						<div class="resume-date text-md-right">
 							<span class="text-primary">2017-18</span>
 							<br><br>
-							<img src="img/linreg.png" class="img-thumbnail" width="200" height="250">
+							<img src="img/linreg.png" class="img-thumbnail" width="150" height="150">
 						</div>
 					</div>
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Kohonen Self-Organising Maps</h3>
-							<div class="subheading mb-3">Machine Learning, Artificial Neural Networks, Pattern Recognition, Dimensionality Reduction</div>
-							<p>The principal aim of this project is the implementation of a Kohonen Network as an application without any Machine Learning library, in order to demonstrate its usefulness and explain in depth the concepts of Machine Learning, by means of a converging Self-Organising Map.<br>
-							The aim of the thesis is to provide an in-depth study of Kohonen’s algorithm, and present insights of its properties, by designing and implementing a complete and functional model.</p>
-							<button type="button" class="btn btn-warning"><a style="color:black" href="som.html">More</a></button>
-							<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/KohonenThesis.pdf">PDF</a></button>
-							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/EMNIST-Kohonen-SOM">Code</a></button>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2017-18</span>
-							<br><br>
-							<img src="img/som1.png" class="img-thumbnail" width="200" height="250">
-						</div>
-					</div>
-
-					<div class="resume-item d-flex flex-column flex-md-row mb-5">
-						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Robotics 1</h3>
+							<span class="badge badge badge-light">SE</span>
+							<h3 class="mb-0">Robotics I</h3>
 							<div class="subheading mb-3">Localisation, Pathfinding, Navigation, Calibration, Object Detection</div>
-							<p>Wrote a program using the Java LeJOS framework, enabling a robot to explore an unknown arena, make and storage a map, detect and avoid obstacles, and optimally navigate to the discovered ending position.</p>
+							<p>Wrote a program using the Java LeJOS framework that enables a robot to explore the arena which contains a small number of obstacles, placed at random locations. There was a single coloured sheet of paper which the robots had to be able to detect using the colour sensor which also signifed the end location, to which the robot had optimally navigate back to the ending position.</p>
 							<button type="button" class="btn btn-warning"><a style="color:black" href="robotics.html">More</a></button>
 							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/Robotics1">Code</a></button>
 						</div>
@@ -221,9 +271,10 @@
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Robotics 2</h3>
+							<span class="badge badge badge-light">SE</span>
+							<h3 class="mb-0">Robotics II</h3>
 							<div class="subheading mb-3">Scout, Doctor, Agents, Jason</div>
-							<p>Wrote a program using the Java LeJOS framework allowing a robot to determine it's starting location in the arena, and work its way to the pre-determined ending position using scout and doctor agents.</p>
+							<p>Wrote a program using the Java LeJOS framework allowing a robot to determine it's starting location in the arena, and optimally work its way to the pre-determined ending position using scout and doctor agents while avoiding the possible obstacles.</p>
 							<button type="button" class="btn btn-warning"><a style="color:black" href="robotics2.html">More</a></button>
 							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/Robotics2">Code</a></button>
 						</div>
@@ -236,8 +287,9 @@
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Scran</h3>
-							<div class="subheading mb-3">Android Food App</div>
+							<span class="badge badge badge-light">Android</span><span class="badge badge badge-light">SE</span>
+							<h3 class="mb-0">Android Food App</h3>
+							<div class="subheading mb-3">Full stack development</div>
 							<p>Scran is a user-oriented application that aids in the decision-making process when choosing a restaurant, and more specifically a dish. Scran will maintain, search and track user and restaurant data to help its users to choose the dish they didn’t know they wanted.</p>
 							<button type="button" class="btn btn-warning"><a style="color:black" href="scran.html">More</a></button>
 							<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/scran.pdf">PDF</a></button>
@@ -246,52 +298,16 @@
 						<div class="resume-date text-md-right">
 							<span class="text-primary">2017</span>
 							<br><br>
-							<img src="img/Scran1.png" class="img-thumbnail" width="100" height="100">
+							<img src="img/Scran1.png" class="img-thumbnail" width="150" height="150">
 						</div>
 					</div>
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Java Chat Server</h3>
-							<div class="subheading mb-3">A CLI messenger for server and clients</div>
-							<p>Create a chat server complete with clients that can connect to and use the server. Using the Java programming language, you are required to create Server and Client programs.</p>
-							<ul>
-								<li>Networking</li>
-								<li>Multithreading</li>
-								<li>Exception Handling</li>
-								<li>Input/Output Handling</li>
-							</ul>
-							<button type="button" class="btn btn-warning">More</button>
-							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/JavaChat">Code</a></button>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2016</span>
-						</div>
-					</div>
-
-					<div class="resume-item d-flex flex-column flex-md-row mb-5">
-						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Facebook Hackathon</h3>
-							<div class="subheading mb-3">iOS Revision App</div>
-							Give EPFL students an interactive platform to revise and prepare for their exams on the go by giving them specific prepared content tailored to the common first-year Bachelor courses at EPFL.
-							<br>
-							By providing feedback using statistics, our mission was to pass down our learnings and tips to future students in order to improve the student pass rate at EPFL which is currently very low at some sections.
-							<br><b>Note</b>: The point was to only use the newly released 1st generation of Swift for the development of this app.</p>
-							<button type="button" class="btn btn-warning"><a style="color:black" href="facebook.html">More</a></button>
-							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/EPFL-Revisions">Code</a></button>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2015</span>
-						</div>
-					</div>
-
-					<div class="resume-item d-flex flex-column flex-md-row mb-5">
-						<div class="resume-content mr-auto">
+							<span class="badge badge badge-light">SE</span>
 							<h3 class="mb-0">Moving Average Filter</h3>
 							<div class="subheading mb-3">Generate, Filter and Display data</div>
-							Wrote C++ in Xcode to generate random plot and noise values of a sinusoidal function using signal characteristics as parameters, which would then be handled by the designed event driven panels and data structures in LabVIEW, and subsequently transferred to Matlab to be displayed in both filtered and unfiltered states.
-							<br><b>Challenges</b>: was to handle the many data I/O flows linking the three softwares.</p>
-							<button type="button" class="btn btn-warning">More</button>
+							<p>Wrote C++ in Xcode to generate random plot and noise values of a sinusoidal function using signal characteristics as parameters, which would then be handled by the designed event driven panels and data structures in LabVIEW, and subsequently transferred to Matlab to be displayed in both filtered and unfiltered states.</p>
 							<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/filtre.pdf">PDF</a></button>
 							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/Genere_cpp">Code</a></button>
 						</div>
@@ -302,23 +318,28 @@
 						</div>
 					</div>
 
-					<div class="resume-item d-flex flex-column flex-md-row mb-5">
-						<div class="resume-content mr-auto">
-							<h3 class="mb-0">Exoplanets: Discoveries and Prospects</h3>
-							<div class="subheading mb-3">Thesis</div>
-							<p>I conduct a literature review and play with publicly accessible scientific datasets to understand the scientific and creative aspects of searching for exoplanets, particularly those that held promise of supporting life as we understand it.</p>
-							<button type="button" class="btn btn-warning"><a style="color:black" href="exoplanets.html">More</a></button>
-							<button type="button" class="btn btn-success btn-xs"><a target="_blank" style="color:white" href="docs/exoplanets.pdf">PDF</a></button>
-							<button type="button" class="btn btn-info btn-xs"><a target="_blank" style="color:white" href="docs/ExoplanetsPres.pdf">Presentation</a></button>
-						</div>
-						<div class="resume-date text-md-right">
-							<span class="text-primary">2012-13</span>
-							<br><br>
-							<img src="img/exoplanets.png" class="img-thumbnail" width="200" height="250">
-						</div>
-					</div>
-
 				</div>
+				</div>
+			</section>
+
+			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="competitions">
+				<div class="my-auto">
+					<h2 class="mb-5">Competitions</h2>
+						<div class="resume-item d-flex flex-column flex-md-row mb-5">
+							<div class="resume-content mr-auto">
+								<span class="badge badge badge-light">SE</span><span class="badge badge badge-light">iOS</span>
+								<h3 class="mb-0">Facebook Hackathon 2015</h3>
+								<div class="subheading mb-3">iOS Revision App</div>
+								Give EPFL students an interactive platform to revise and prepare for their exams on the go by giving them specific prepared content tailored to the common first-year Bachelor 	courses at EPFL. By providing feedback using statistics, our mission was to pass down our learnings and tips to future students in order to improve the student pass rate at EPFL 	which is currently very low at some sections. The point was to only use the newly released 1st generation of Swift for the development of this app.</p>
+								<button type="button" class="btn btn-warning"><a style="color:black" href="facebook.html">More</a></button>
+								<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/EklavyaFCB/EPFL-Revisions">Code</a></button>
+							</div>
+							<div class="resume-date text-md-right">
+								<span class="text-primary">2015</span>
+								<br><br>
+								<img src="img/FacebookLogo2.png" class="img-thumbnail" width="100">
+							</div>
+						</div>
 				</div>
 			</section>
 
@@ -418,36 +439,43 @@
 
 					<ul class="list-inline list-icons">
 						<li class="list-inline-item">
-							<i class="devicon-java-plain"></i>
+							<i class="devicon-java-plain-wordmark colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicon-javascript-plain"></i>
+							<i class="devicon-javascript-plain colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicon-python-plain"></i>
+							<i class="devicon-python-plain-wordmark colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicon-mysql-plain"></i>
+							<i class="devicon-mysql-plain-wordmark colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicons devicons-jquery"></i>
-						<li class="list-inline-item">
-							<i class="devicon-php-plain"></i>
+							<i class="devicon-jquery-plain-wordmark colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicon-cplusplus-plain"></i>
+							<i class="devicon-php-plain colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicons devicons-bootstrap"></i>
+							<i class="devicon-cplusplus-plain colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicons devicons-html5"></i>
+							<i class="devicon-bootstrap-plain-wordmark colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicons devicons-css3"></i>
+							<i class="devicon-html5-plain-wordmark colored"></i>
 						</li>
 						<li class="list-inline-item">
-							<i class="devicon-git-plain"></i>
+							<i class="devicon-css3-plain-wordmark colored"></i>
+						</li>
+						<li class="list-inline-item">
+							<i class="devicon-git-plain-wordmark colored"></i>
+						</li>
+						<li class="list-inline-item">
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</li>
+						<li class="list-inline-item">
+							<i class="devicon-d3js-plain colored"></i>
 						</li>
 					</ul>
 
@@ -455,25 +483,25 @@
 						<ul class="fa-ul mb-0">
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								Python: Pandas, NumPy, Matplotlib, Flask</li>
+								Python - TensorFlow, SkLearn, OpenCV, SeaBorn, Pandas, NumPy, Matplotlib, Flask</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								Java: LeJOS</li>
+								Java - LeJOS</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								Javascript: D3, jQuery, AJAX</li>
+								Javascript - D3.js, jQuery, AJAX</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								SQL: MySQL, MySQL Workbench</li>
+								SQL - MySQL, MySQL Workbench</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								C++: Cern's ROOT</li>
+								C++ - Cern's ROOT</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
 								PHP</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								HTML, CSS, Bootstrap</li>
+								HTML, CSS  - Bootstrap</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
 								Tex</li>
@@ -485,18 +513,20 @@
 					 <ul class="fa-ul mb-0">
 						<li>
 							<i class="fa-li fa fa-check"></i>
-							Linux, Unix</li>
+							Git, Github</li>
 						<li>
 							<i class="fa-li fa fa-check"></i>
-							Shell</li>
-							<i class="fa-li fa fa-check"></i>
-							Git, Github</li>
+							Linux, Unix</li>
 						<li>
 							<i class="fa-li fa fa-check"></i>
 							Databases</li>
 						<li>
 							<i class="fa-li fa fa-check"></i>
 							Mattermost</li>
+						<li>
+							<i class="fa-li fa fa-check"></i>
+							Shell</li>
+						<li>
 					</ul>
 				 </div>
 
@@ -511,22 +541,23 @@
 							<p><a href="https://student-news.liverpool.ac.uk/2017/11/16/student-feature-summer-internship-cern/">FULL Student feature: My summer Internship at CERN</a></p>
 							<p>"<i>Arriving wide-eyed at the main lab on the first day, I discovered that I was among twenty other excited students, from all over the world, ranging from Thailand, Brazil, France, US, India, Italy and many others, all of whom had arrived at different moments during the summer, meaning there was little time for individual introductions to the lab and explanations of the various hardware components and the software code base.</i>"</p>
 							<p>"<i>My role, as I learnt, was being involved in the last quality control to verify the detector’s hardware was functioning appropriately, by having python code run through its triggers to see if it correctly detected small electrical test collisions, and then improving the software used for these tests by adding new functionalities to the codebase, such as increasing the step size of the displayed graphs, and changing basic configurations of the detectors, which would allow them behave in different ways under different electrical conditions.</i>"</p>
+							<button type="button" class="btn btn-warning"><a style="color:black" href="news.html">More</a></button>
 						</div>
 				</div>
 			</section>
 
 			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
 				<div class="my-auto">
-					<h2 class="mb-5">Interests and Awards</h2>
-					<p>Apart from being a Computer Science student, I enjoy most of my time being outdoors. In the winter, I enjoy skiing, and during the warmer months, I enjoy swimming, running and maintaining my fitness.</p>
+					<h2 class="mb-5">Interests</h2>
+					<p>Apart from being a Computer Science student, I enjoy most of my time being outdoors. I practice skiing in winter and hiking in summer, both amply available in Switzerland.</p>
 					<p>When forced indoors, I follow a number of movies and television shows, and hold a Filmmaking Diploma from Brighton Film School. I am also a certified Game of Thrones geek. Otherwise, I spend a large amount of my free time exploring the latest technolgy advancements in the world such as with SpaceX, Tesla Motors and in Google IOs.</p>
 					<p>In the past I have written several articles for notable football blogs about my experiences and analysis in viewing matches live.</p>
 					<br>
 					<div>- UK Swimathon 2018, 1.5 km challenge</div>
 					<div>- University of Liverpool Campus Fun Run, 5 km</div>
-					<div>- Karaté Green Belt</div>
 					<div>- Brighton Film School Summer Filmmaking Diploma</div>
 					<div>- Project Why NGO Volunteer, New Delhi, India</div>
+					<div>- Karaté Green Belt</div>
 				</div>
 			</section>
 
