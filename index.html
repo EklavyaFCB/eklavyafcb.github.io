@@ -100,9 +100,9 @@
 						<span class="text-primary">Sarkar</span>
 					</h1>
 					<div class="subheading mb-5"> MSc Data Science & BSc Computer Science Graduate</div>
-					<p>Currently a PhD student at EPFL and research assistant at Idiap Research Insitute,
+					<p>Second year PhD student at EPFL and Research Assistant at Idiap Research Insitute,
 	  				<br>working in the Speech and Audio Processing group, under Dr. Mathew Magimai Doss.
-	  				<br><br>Funded by EvoLang project, and affiliated with TTF Tech.</p>
+	  				<br><br>Studying the <a href="https://evolvinglanguage.ch/">Evolution of Language</a>.</p>
 					<br><br><br><br>
 					<ul class="list-inline list-social-icons mb-0">
 			<li class="list-inline-item">
@@ -149,15 +149,16 @@
 			  <p>Supervisor: Dr. Mathew Magimai Doss, Speech and Audio Processing Group</p>
 			  <br>
 			  <ul>
-				<li>Funded by EvoLang Project, TTF Tech ASR.</li>
-				<li>Inference of Symbolic Structure given Minimal Supervision.</li>
-				<li>Low Resource Speech Processing.</li>
+				<li>Working on <a href="https://evolvinglanguage.ch/">EvoLang</a> Project, TTF Tech ASR.</li>
+				<li>Audio Segmentation Methods for Analyzing Vocal Communication: From Humans to Animals.</li>
+				<li>Low Resource Speech and Animal Vocalizations</li>
 			  </ul>
 			</div>
 			<div class="resume-date text-md-right">
 			  <span class="text-primary">March 2021 - Present</span>
 			  <br><br>
 			  <img src="img/idiaplogo.jpeg" class="img-thumbnail" width="150" height="100"><br><br>
+			  <img src="img/EvoLang.png" class="img-thumbnail" width="150" height="100"><br><br>
 			</div>
 		  </div>
 
@@ -376,6 +377,28 @@
 				<div class="resume-content mr-auto">
 				  <span class="badge badge badge-light">Pre-print</span><span class="badge badge badge-light">Signal Processing</span><span class="badge badge badge-light">VAD</span><span class="badge badge badge-light">Speech</span>
 				  <h3 class="mb-0">Voice Activity Detection</h3>
+				  <div class="subheading mb-3">Unsupervised Voice Activity Detection by Modeling Source and System Information using Zero Frequency Filtering</div>
+					<a class="btn btn-warning" data-toggle="collapse" href="#collapseInterSpeechVAD" role="button" aria-expanded="false" aria-controls="collapseInterSpeechVAD">
+					  Abstract
+					</a>
+				  <div class="collapse" id="collapseInterSpeechVAD">
+					<div class="card card-body">
+						Voice activity detection (VAD) is an important pre-processing step for speech technology applications. The task consists of deriving segment boundaries of audio signals which contain voicing information. In recent years, it has been shown that voice source and vocal tract system information can be extracted using zero-frequency filtering (ZFF) without making any explicit model assumptions about the speech signal. This paper investigates the potential of zero-frequency filtering for jointly modeling voice source and vocal tract system information, and proposes two approaches for VAD. The first approach demarcates voiced regions using a composite signal composed of different zero-frequency filtered signals. The second approach feeds the composite signal as input to the rVAD algorithm. These approaches are compared with other supervised and unsupervised VAD methods in the literature, and are evaluated on the Aurora-2 database, across a range of SNRs (20 to -5 dB). Our studies show that the proposed ZFF-based methods perform comparable to state-of-art VAD methods and are more invariant to added degradation and different channel characteristics. 
+					</div>
+				  </div>
+				  <!-- <button type="button" class="btn btn-success"><a style="color:white" href="">ArXiv</a></button> -->
+				</div>
+				<div class="resume-date text-md-right">
+				  <span class="text-primary">March 2022 <br> Interspeech 2022 Submission</span>
+				  <br><br>
+				  <!-- <img src="img/idiaplogo.jpeg" class="img-thumbnail" width="100" height="100"> -->
+				</div>
+			  </div>
+
+			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+				<div class="resume-content mr-auto">
+				  <span class="badge badge badge-light">Pre-print</span><span class="badge badge badge-light">Signal Processing</span><span class="badge badge badge-light">VAD</span><span class="badge badge badge-light">Speech</span>
+				  <h3 class="mb-0">Voice Activity Detection</h3>
 				  <div class="subheading mb-3">Modeling Source and System characteristics using Zero Frequency Filtering for Voice Activity Detection</div>
 					<a class="btn btn-warning" data-toggle="collapse" href="#collapseVAD" role="button" aria-expanded="false" aria-controls="collapseVAD">
 					  Abstract
@@ -396,7 +419,7 @@
 
 			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
 				<div class="resume-content mr-auto">
-				  <span class="badge badge badge-light">Pre-print</span><span class="badge badge badge-light">StyleGAN2</span><span class="badge badge badge-light">Face Recognition</span><span class="badge badge badge-light">Biometrics</span>
+				  <span class="badge badge badge-light">Accepted</span><span class="badge badge badge-light">StyleGAN2</span><span class="badge badge badge-light">Face Recognition</span><span class="badge badge badge-light">Biometrics</span>
 				  <h3 class="mb-0">Face Morphing</h3>
 				  <div class="subheading mb-3">Are GAN-based Morphs Threatening Face Recognition?</div>
 					<a class="btn btn-warning" data-toggle="collapse" href="#threats" role="button" aria-expanded="false" aria-controls="threats">
@@ -407,10 +430,12 @@
 						Morphing attacks are a threat to biometric systems where the biometric reference in an identity document can be altered. This form of attack presents an important issue in applications relying on identity documents such as border security or access control. Research in generation of face morphs and their detection is developing rapidly, however very few datasets with morphing attacks and open-source detection toolkits are publicly available. This paper bridges this gap by providing two datasets and the corresponding code for four types of morphing attacks: two that rely on facial landmarks based on OpenCV and FaceMorpher, and two that use StyleGAN 2  to generate synthetic morphs. We also conduct extensive experiments to assess the vulnerability of four state-of-the-art face recognition systems, including FaceNet, VGG-Face, ArcFace, and ISV. Surprisingly, the experiments demonstrate that, although visually more appealing, morphs based on StyleGAN 2 do not pose a significant threat to the state to face recognition systems, as these morphs were outmatched by the simple morphs that are based facial landmarks.
 					</div>
 				  </div>
-				  <!-- <button type="button" class="btn btn-success"><a style="color:white" href="">ArXiv</a></button> -->
+				<button type="button" class="btn btn-success"><a style="color:white" href="https://arxiv.org/abs/2205.02496">ArXiv</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://gitlab.idiap.ch/bob/bob.paper.icassp2022_morph_generate">Code</a></button>
+				<button type="button" class="btn btn-danger btn-xs"><a target="_blank" style="color:white" href="docs/Sarkar_ICASSP_2022_Poster.pdf">Poster</a></button>
 				</div>
 				<div class="resume-date text-md-right">
-				  <span class="text-primary">October 2021 <br> ICASSP 2022 Submission</span>
+				  <span class="text-primary">October 2021 <br> Accepted at ICASSP 2022</span>
 				  <br><br>
 				  <!-- <img src="img/idiaplogo.jpeg" class="img-thumbnail" width="100" height="100"> -->
 				</div>
