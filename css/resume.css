@@ -6,7 +6,8 @@
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: #868e96;
+  background-color: #FFFBF0; }
 
 @media (min-width: 992px) {
   body {
@@ -106,8 +107,8 @@ section.resume-section {
 .bg-primary {
   background-color: #BD5D38 !important; }
 
-.container-fluid {
-  background-color: #FFFBF0 !important; }
+/*.container-fluid {
+  background-color: #FFFBF0 !important; }*/
 
 .text-primary {
   color: #BD5D38 !important; }
