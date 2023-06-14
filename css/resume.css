@@ -106,6 +106,9 @@ section.resume-section {
 .bg-primary {
   background-color: #BD5D38 !important; }
 
+.container-fluid {
+  background-color: #FFFBF0 !important; }
+
 .text-primary {
   color: #BD5D38 !important; }
 
