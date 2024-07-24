@@ -103,7 +103,7 @@
 					<p>Third year PhD student at <a href="https://epfl.ch/">EPFL</a> and Research Assistant at <a href="https://idiap.ch/">Idiap Research Insitute</a>,
 	  				<br>working in the Speech and Audio Processing group, under <a href="https://scholar.google.ch/citations?user=_LvtkuAAAAAJ&hl=en">Dr. Mathew Magimai Doss</a>.
 	  				<br><br><p>My research focuses on speech and audio methods based on self-supervised
-	  				<br>representation learning for analyzing vocal communication in humans and animals,<br> for the wider purpose of studying the <a href="https://evolvinglanguage.ch/">evolution of language</a>.</p>
+	  				<br>representation learning for analyzing human and non-human vocal communication,<br> for the wider purpose of studying the <a href="https://evolvinglanguage.ch/">evolution of language</a>.</p>
 					<br><p>Previously I worked worked on computer vision topics such as deepfakes and biometrics
 					<br>spoofing, as well as physics research and development at CERN in the CMS experiment.</p>
 					<br><br>
@@ -223,8 +223,34 @@
 
 			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
 				<div class="resume-content mr-auto">
+				  <span class="badge badge badge-light">Foundation Models</span><span class="badge badge badge-light">Pre-training Domain</span><span class="badge badge badge-light">Bandwidth</span><span class="badge badge badge-light">Bioacoustics</span>
+				  <!-- <h3 class="mb-0">On the Utility of Speech and Audio Foundation Models for Marmoset Call Analysis</h3> -->
+				  <div class="subheading mb-3">On the Utility of Speech and Audio Foundation Models for Marmoset Call Analysis</div>
+					<a class="btn btn-warning" data-toggle="collapse" href="#collapseInterSpeechMarmoset" role="button" aria-expanded="false" aria-controls="collapseInterSpeechMarmoset">
+					  Abstract
+					</a>
+				  <div class="collapse" id="collapseInterSpeechMarmoset">
+					<div class="card card-body">
+						Marmoset monkeys encode vital information in their calls and serve as a surrogate model for neuro-biologists to understand the evolutionary origins of human vocal communication. Traditionally analyzed with signal processing-based features, recent approaches have utilized self-supervised models pre-trained on human speech for feature extraction, capitalizing on their ability to learn a signal's intrinsic structure independently of its acoustic domain. However, the utility of such foundation models remains unclear for marmoset call analysis in terms of multi-class classification, bandwidth, and pre-training domain. This study assesses feature representations derived from speech and general audio domains, across pre-training bandwidths of 4, 8, and 16 kHz for marmoset call-type and caller classification tasks. Results show that models with higher bandwidth improve performance, and pre-training on speech or general audio yields comparable results, improving over a spectral baseline.
+					</div>
+				  </div>
+				<button type="button" class="btn btn-success"><a style="color:white" href="https://arxiv.org/abs/2407.16417">Paper</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://github.com/idiap/speech-utility-bioacoustics">Code</a></button>
+				<!-- <button type="button" class="btn btn-danger btn-xs"><a target="_blank" style="color:white" href="">Poster</a></button> -->
+				<!-- <button type="button" class="btn btn-info btn-xs"><a target="_blank" style="color:white" href="">Presentation</a></button> -->
+				<!-- <button type="button" class="btn btn-secondary btn-xs"><a target="_blank" style="color:white" href="">Slides</a></button> -->
+				</div>
+				<div class="resume-date text-md-right">
+				  <span class="text-primary">Accepted at Interspeech 2024 &#127468;&#127479;</span>
+				  <br><br>
+				  <!-- <img src="img/idiaplogo.jpeg" class="img-thumbnail" width="100" height="100"> -->
+				</div>
+			  </div>
+
+			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+				<div class="resume-content mr-auto">
 				  <span class="badge badge badge-light">Self-Supervised Learning</span><span class="badge badge badge-light">Speaker ID</span><span class="badge badge badge-light">Speech</span>
-				  <h3 class="mb-0">Caller Detection</h3>
+				  <!-- <h3 class="mb-0">Caller Detection</h3> -->
 				  <div class="subheading mb-3">Can Self-Supervised Neural Networks Pre-Trained on Human Speech distinguish Animal Callers?</div>
 					<a class="btn btn-warning" data-toggle="collapse" href="#collapseInterSpeechMarmoset" role="button" aria-expanded="false" aria-controls="collapseInterSpeechMarmoset">
 					  Abstract
@@ -251,7 +277,7 @@
 			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
 				<div class="resume-content mr-auto">
 				  <span class="badge badge badge-light">Signal Processing</span><span class="badge badge badge-light">VAD</span><span class="badge badge badge-light">Speech</span>
-				  <h3 class="mb-0">Voice Activity Detection</h3>
+				  <!-- <h3 class="mb-0">Voice Activity Detection</h3> -->
 				  <div class="subheading mb-3">Unsupervised Voice Activity Detection by Modeling Source and System Information using Zero Frequency Filtering</div>
 					<a class="btn btn-warning" data-toggle="collapse" href="#collapseInterSpeechVAD" role="button" aria-expanded="false" aria-controls="collapseInterSpeechVAD">
 					  Abstract
@@ -298,7 +324,7 @@
 			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
 				<div class="resume-content mr-auto">
 				  <span class="badge badge badge-light">StyleGAN2</span><span class="badge badge badge-light">Face Recognition</span><span class="badge badge badge-light">Biometrics</span>
-				  <h3 class="mb-0">Face Morphing</h3>
+				  <!-- <h3 class="mb-0">Face Morphing</h3> -->
 				  <div class="subheading mb-3">Are GAN-based Morphs Threatening Face Recognition?</div>
 					<a class="btn btn-warning" data-toggle="collapse" href="#threats" role="button" aria-expanded="false" aria-controls="threats">
 					  Abstract
@@ -325,7 +351,7 @@
 			  <div class="resume-item d-flex flex-column flex-md-row mb-5">
 				<div class="resume-content mr-auto">
 				  <span class="badge badge badge-light">StyleGAN2</span><span class="badge badge badge-light">Face Recognition</span><span class="badge badge badge-light">Biometrics</span>
-				  <h3 class="mb-0">Face Morphing</h3>
+				  <!-- <h3 class="mb-0">Face Morphing</h3> -->
 				  <div class="subheading mb-3">Vulnerability Analysis of Face Morphing Attacks from Landmarks and Generative Adversarial Networks</div>
 					<a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 					  Abstract
@@ -751,7 +777,7 @@
 						<div class="resume-date text-md-right">
 							<span class="text-primary">March 2021 - Present</span>
 							<br>
-							<span class="text-primary">Grade: <b>5.4/6</b></span>
+							<span class="text-primary">Grade: <b>5.2/6</b></span>
 							<br><br>
 							<img src="img/epfl.png" class="rounded" width="150">
 						</div>
@@ -930,6 +956,27 @@
 
 					<div class="resume-item d-flex flex-column flex-md-row mb-5">
 						<div class="resume-content mr-auto">
+							<h3 class="mb-0">Organizer</h3>
+							<div class="subheading mb-3">Perspectives on AI Symposium Series</div>
+							<ul>
+								<li>Participated in the conception and organization of the series along PIs.</li>
+								<li>Responsible for developing the vision, design, and implementation of the event <a href="https://pai.idiap.ch/">website</a>.</li>
+								<li>Helped in finding sponsors, budgeting, and overall event management.</li>
+							</ul>
+							<br>
+							<button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://pai.idiap.ch/">Website</a></button>
+							<button type="button" class="btn btn-danger btn-xs"><a target="_blank" style="color:white" href="https://www.youtube.com/playlist?app=desktop&list=PLUqt83brHwngpBhCHG0c0R57UuZ7ia6j0">Clips</a></button>
+							<button type="button" class="btn btn-info btn-xs"><a target="_blank" style="color:white" href="https://watch.klewel.com/watch/search?query=Idiap+Symposium+Series+-+Perspectives+on+AI">Presentations</a></button>
+						</div>
+						<div class="resume-date text-md-right">
+							<span class="text-primary">2022-24</span>
+							<br><br>
+							<img src="img/pai.png" class="rounded" width="300">
+						</div>
+					</div>
+
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
 							<h3 class="mb-0">President</h3>
 							<div class="subheading mb-3">Student Residence Hall's Committee</div>
 							<ul>
@@ -948,14 +995,18 @@
 							<img src="img/guild.png" class="rounded" width="150">
 						</div>
 					</div>
+				
 				</div>
-
 			</section>
 
 			<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
 				<div class="my-auto">
 					<h2 class="mb-5">Interests</h2>
 		  <ul class="fa-ul mb-0">
+			<li>
+			  <i class="fa-li fa fa-heart text-warning"></i>
+			  Dance: Bachata, Salsa
+			</li>
 			<li>
 			  <i class="fa-li fa fas fa-gamepad text-warning"></i>
 			  <a href="https://eklavya.itch.io/mystery-monkeys">Indie Game Development</a>
