@@ -530,8 +530,27 @@
 									<li style="font-size:14px">Research topics: speech processing, self-supervised learning, bio-acoustics, speaker diarization, voice activity detection, domain adaption, acoustic sub-word units, and low-resource scenarios.</li>
 									<li style="font-size:14px">Supervised Interns and Master students.</li>
 								</ul>
-								<button type="button" class="btn btn-warning"><a style="color:black">More</a></button>
-								<button type="button" class="btn btn-success"><a style="color:white" href="https://publications.idiap.ch/publications/show/5653">PDF</a></button>
+								<a class="btn btn-warning" data-toggle="collapse" href="#collapsePhDThesis" role="button" aria-expanded="false" aria-controls="collapsePhDThesis">
+								  Abstract
+								</a>
+							  <div class="collapse" id="collapsePhDThesis">
+								<div class="card card-body">
+									<b>Authors: Eklavya Sarkar</b>
+									Humans and animals both use acoustic signals for vocal communication. The advent of self-supervised learning (SSL) has enabled neural networks to learn robust and general feature representations through the intrinsic acoustic structure of input signals, without prior knowledge or supervision. Given that both human speech and animal vocalizations are inherently structured signals that encode information, this thesis investigates whether representations learnt from human speech are transferable for decoding non-human animal vocalizations.
+									<br><br>
+									We first formulate and validate our core hypothesis through a proof-of-concept caller detection study on marmoset vocalizations, where multiple pre-trained SSL models are benchmarked. Building on this, we further evaluate their transferability across multiple marmoset datasets, and demonstrate that early layer representations from SSL models such as WavLM outperform traditional handcrafted features for call-type and caller identity classification.
+									<br><br>
+									We then explore how differences in auditory bandwidth between humans and animals influence the transferability of such SSL features. We show that bandwidth mismatches can have an impact on performance, and increasing its size yields a monotonic improvement for call-type and caller classification. We also compare SSL models pre-trained on speech with those pre-trained on general audio or directly on animal vocalizations. Our experiments reveal that general-purpose audio pre-training yields comparable performance to human speech pre-training, and the bioacoustics-trained models marginally improve it on specific datasets.
+									<br><br>
+									To further improve classification scores, we investigate model adaptation of the pre-trained SSL models. Fine-tuning such speech models on an automatic speech recognition task in a supervised framework does not bring any consistent improvements in performance, and in some cases, actually leads to a performance decline in the later layers. However, parameter-efficient fine-tuning strategies, such as Low-Rank Adaptation (LoRA), combined with selective layer freezing and pruning, achieves significant gains over standard linear probing in specific scenarios, while also reducing training complexity. Our results underscore the importance of LoRA adapter placements, layer selections, and fine-tuning strategies.
+									<br><br>
+									Finally, we attempt to leverage the sequential nature of animal vocalizations. While previous experiments temporally averaged extracted features into single vector representations, we use vector quantization frameworks to discretize frame-level SSL features into acoustic token sequences. We evaluate these sequences through Levenshtein-distance analysis and sequence classification, and find that while they preserve some degree of acoustic discriminability, their performance remains well below that of a simple linear classifier applied to averaged functional vectors.
+									<br><br>
+									On the whole, this thesis demonstrates that SSL representations learnt from human speech can generalize effectively to animal vocalizations. Our work provides a practical and robust groundwork for computational bioacoustics, as well as a foundation for further bridging machine learning with animal communication science.
+								</div>
+							  </div>
+								<button type="button" class="btn btn-success"><a style="color:white" href="https://infoscience.epfl.ch/entities/publication/cb827477-ff41-4180-b962-d15b670e0c09">PDF</a></button>
+								<button type="button" class="btn btn-secondary btn-xs"><a target="_blank" style="color:white" href="docs/Sarkar_PhD_Presentation.pdf">Slides</a></button>
 								<!-- <button type="button" class="btn btn-primary btn-xs"><a target="_blank" style="color:white" href="https://www.kaggle.com/eklavyas/faceemotionclassification">Code</a></button> -->
 							</div>
 							<div class="resume-date text-md-right">
